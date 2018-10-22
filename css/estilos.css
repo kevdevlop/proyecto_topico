@@ -23,6 +23,37 @@
 
 }
 
+footer{
+	color: #D7DBDD;
+}
+
 .footer-content{
 	text-align: center;
+}
+
+	.footer-content ul{
+		list-style: none;
+	}
+
+		.footer-content ul li{
+			margin-top: 20px;
+			margin-right: 11%;
+		}
+
+		.footer-content ul li a{
+			text-decoration: none;
+			color: #AAB7B8;
+		}
+
+		.footer-content ul li a:hover{
+			color: #D5DBDB;
+		}
+
+a.dropdown-item:hover{
+	background-color: #F8C471;
+	color: white;
+}
+
+a#navbarDropdownPortfolio:hover{
+	color: #fff;
 }
