@@ -1,0 +1,28 @@
+#menuMain{
+	background-color: #F39C12 !important;
+}
+
+#form-search{
+	position: relative;
+    margin-right: 39%;
+}
+
+
+#carouselExampleIndicators{
+	margin-top: 5%;
+	margin-left: 11%;
+	margin-right: 11%;
+}
+
+
+#box-info{
+	margin-left: 46%;
+	margin-bottom: 6%;
+	background-color: white;
+	color: black;
+
+}
+
+.footer-content{
+	text-align: center;
+}
