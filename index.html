@@ -25,7 +25,7 @@
     <!-- Menu principal -->
     <header>
       <nav id="menuMain" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">LOGO</a>
+        <a class="navbar-brand" id="logo" href="index.html"><img class="rounded-circle" src="img/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -69,13 +69,13 @@
           <div class="carousel-item active" style="background-image: url('https://www.viajejet.com/wp-content/viajes/preparar-Enchilada-1440x810.jpg')">
             <div id="box-info" class="carousel-caption d-none d-md-block">
               <h3>Receta 1</h3>
-              <button class="btn-success">Más info.</button>
+              <button class="btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
             </div>
           </div>
           <div class="carousel-item" style="background-image: url('https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/03/21/58d1bc2095db6.jpeg')">
             <div id="box-info" class="carousel-caption d-none d-md-block">
               <h3>Receta 2</h3>
-              <button class="btn-success">Más info.</button>
+              <button class="btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -108,10 +108,148 @@
     <div class="contenido">
       <section class="py-5">
         <div class="container">
-          <h1>Half Slider by Start Bootstrap</h1>
-          <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the
-            <code>half-slider.css</code>
-            file.</p>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="masnuevo-tab" data-toggle="tab" href="#masnuevo" role="tab" aria-controls="masnuevo" aria-selected="true">Lo más nuevo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="mejorpuntaje-tab" data-toggle="tab" href="#mejorpuntaje" role="tab" aria-controls="mejorpuntaje" aria-selected="false">Mejores Puntajes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="recomendaciones-tab" data-toggle="tab" href="#recomendaciones" role="tab" aria-controls="recomendaciones" aria-selected="false">Recomendaciones</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="masnuevo" role="tabpanel" aria-labelledby="masnuevo-tab">
+              <div class="tab-content">
+                
+                <h4>Las recetas más nuevas</h4>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="caja">
+                      <div class="caja-imagen">
+                        <img class="img-receta-min" src="img/img-default.png">
+                      </div>
+                      <div class="caja-cuerpo">
+                        <p class="title-receta">Receta 1</p>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="caja">
+                      <div class="caja-imagen">
+                        <img class="img-receta-min" src="img/img-default.png">
+                      </div>
+                      <div class="caja-cuerpo">
+                        <p class="title-receta">Receta 2</p>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="caja">
+                      <div class="caja-imagen">
+                        <img class="img-receta-min" src="img/img-default.png">
+                      </div>
+                      <div class="caja-cuerpo">
+                        <p class="title-receta">Receta 3</p>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+            <div class="tab-pane fade" id="mejorpuntaje" role="tabpanel" aria-labelledby="mejorpuntaje-tab">
+              <div class="tab-content">
+                
+                <h4>Los mejores puntajes</h4>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="caja">
+                      <div class="caja-imagen">
+                        <img class="img-receta-min" src="img/img-default.png">
+                      </div>
+                      <div class="caja-cuerpo">
+                        <p class="title-receta">Receta 1</p>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="caja">
+                      <div class="caja-imagen">
+                        <img class="img-receta-min" src="img/img-default.png">
+                      </div>
+                      <div class="caja-cuerpo">
+                        <p class="title-receta">Receta 2</p>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="caja">
+                      <div class="caja-imagen">
+                        <img class="img-receta-min" src="img/img-default.png">
+                      </div>
+                      <div class="caja-cuerpo">
+                        <p class="title-receta">Receta 3</p>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+            <div class="tab-pane fade" id="recomendaciones" role="tabpanel" aria-labelledby="recomendaciones-tab">
+              <div class="tab-content">
+                <h4>Nuestras recomendaciones</h4>
+                <hr class="line">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="caja">
+                      <div class="caja-imagen">
+                        <img class="img-receta-min" src="img/img-default.png">
+                      </div>
+                      <div class="caja-cuerpo">
+                        <p class="title-receta">Receta 1</p>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="caja">
+                      <div class="caja-imagen">
+                        <img class="img-receta-min" src="img/img-default.png">
+                      </div>
+                      <div class="caja-cuerpo">
+                        <p class="title-receta">Receta 2</p>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="caja">
+                      <div class="caja-imagen">
+                        <img class="img-receta-min" src="img/img-default.png">
+                      </div>
+                      <div class="caja-cuerpo">
+                        <p class="title-receta">Receta 3</p>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Más info.</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -139,6 +277,30 @@
       </div>
       
     </footer>
+
+
+    <!--               Modal's          -->
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="exampleModalCenter" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Info receta 1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+             <h5>Aqui va la info de la receta...</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript (librerias JS) -->
     <script src="vendor/jquery/jquery.min.js"></script>

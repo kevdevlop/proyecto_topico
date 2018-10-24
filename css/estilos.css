@@ -1,3 +1,12 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
 #menuMain{
 	background-color: #F39C12 !important;
 }
@@ -7,12 +16,15 @@
     margin-right: 39%;
 }
 
-
-#carouselExampleIndicators{
-	margin-top: 5%;
-	margin-left: 11%;
-	margin-right: 11%;
+#logo{
+	padding-bottom: 0;
+	padding-top: 0;
 }
+
+	#logo img{
+		width: 55px;
+		height: 55px;
+	}
 
 
 #box-info{
@@ -23,7 +35,13 @@
 
 }
 
+.container{
+	margin-top: 20px;
+}
+
 footer{
+	position: absolute;
+	width: 100%;
 	color: #D7DBDD;
 }
 
@@ -54,6 +72,93 @@ a.dropdown-item:hover{
 	color: white;
 }
 
+a#navbarDropdownPortfolio{
+	color: black;
+}
+
 a#navbarDropdownPortfolio:hover{
 	color: #fff;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	background-color: #F39C12;
+	color: white;
+}
+
+/* Media queries para que sea responsivo*/
+@media (min-width: 1200px){
+	#carouselExampleIndicators{
+		margin-top: 3%;
+		margin-left: 11%;
+		margin-right: 11%;
+	}
+	.nav-link {
+	    padding-left: 124px;
+	    padding-right: 124px;
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	#carouselExampleIndicators{
+		margin-top: 3%;
+		margin-left: 11%;
+		margin-right: 11%;
+	}
+	.nav-link{
+	   padding-left: 94px;
+	   padding-right: 94px;
+	}
+}
+
+
+@media (max-width: 992px) {
+	.d-md-block{
+		display: block!important;
+	}
+	#box-info h3{
+		display: none!important;
+	}
+	#carouselExampleIndicators{
+		margin-top: 3%;
+	}
+	.nav-item{
+	   width: 100%;
+	}
+	.nav-link{
+		text-align: center;
+	}
+}
+/* Termina media quieries*/
+
+.img-receta-min{
+	width: 100%;
+}
+
+.title-receta{
+	text-align: center;
+}
+
+.tab-content{
+	margin-top: 12px;
+}
+
+	.tab-content h4{
+		text-align: center;
+	}
+ 
+.line{
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+.caja{
+	padding: 0;
+    /* background-color: #ECF0F1; */
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.caja-cuerpo{
+	padding: 1.25rem;
 }
